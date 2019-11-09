@@ -1,0 +1,132 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header{
+  margin: 40px 0;
+}
+
+.container{
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+header .container > div{
+  display: flex;
+  align-items: center;
+}
+
+header .left{
+  width: 45%;
+}
+
+header .right{
+  width: 55%;
+  justify-content: space-between;
+  position: relative;
+}
+
+header .left img{
+  height: 27px;
+  width: auto;
+}
+
+header .left a:first-of-type{
+  margin: 0 30px;
+}
+
+header .left a{
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header a{
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+header a:hover{
+  opacity: 1;
+}
+
+header a.active{
+  opacity: 1;
+}
+
+header .right i{
+  font-size: 12px;
+  display: none;
+}
+
+header .right button{
+  background-color: #eb008d;
+  padding: 10px 24px;
+  color: #ffffff;
+  border: none;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header .right button:hover{
+  background-color: rgb(210, 0, 126);
+}
+
+header .right > div{
+  position: relative;
+}
+
+header .right ul{
+  position: absolute;
+  top: 25px;
+  list-style: none;
+  flex-direction: column;
+  padding: 15px 20px;
+  transform: translateX(-20px);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  width: auto;
+}
+
+header .right ul li{
+  display: inline-block;
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+header .right ul li:first-child{
+  margin-top: 5px;
+}
+
+header .right ul li:last-child{
+  margin-bottom: 5px;
+}
+
+#account ul{
+  display: none;
+}
+#company ul{
+  display: none;
+}
+#product ul{
+  width: 256px;
+  display: none;
+  transform: translateX(-36%);
+}
+#help ul{
+  width: 150px;
+  display: none;
+  transform: translateX(-39%);
+}
+#lang ul{
+  display: none;
+  transform: translateX(-37%);
+}
