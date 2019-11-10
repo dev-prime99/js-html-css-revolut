@@ -1,0 +1,281 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header{
+  margin: 40px 0;
+}
+
+.container{
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+header .container > div{
+  display: flex;
+  align-items: center;
+}
+
+header .left{
+  width: 45%;
+}
+
+header .right{
+  width: 55%;
+  justify-content: space-between;
+  position: relative;
+}
+
+header .left img{
+  height: 27px;
+  width: auto;
+}
+
+header .left a:first-of-type{
+  margin: 0 30px;
+}
+
+header .left a{
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header a{
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+header a:hover{
+  opacity: 1;
+}
+
+header a.active{
+  opacity: 1;
+}
+
+header .right i{
+  font-size: 12px;
+  display: none;
+}
+
+header .right button{
+  background-color: #eb008d;
+  padding: 10px 24px;
+  color: #ffffff;
+  border: none;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header .right button:hover{
+  background-color: rgb(210, 0, 126);
+}
+
+header .right > div{
+  position: relative;
+}
+
+header .right ul{
+  position: absolute;
+  top: 25px;
+  list-style: none;
+  flex-direction: column;
+  padding: 15px 20px;
+  transform: translateX(-20px);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  width: auto;
+}
+
+header .right ul li{
+  display: inline-block;
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+header .right ul li:first-child{
+  margin-top: 5px;
+}
+
+header .right ul li:last-child{
+  margin-bottom: 5px;
+}
+
+header .right ul li sup{
+  color: #eb008d;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#account ul{
+  display: none;
+}
+#company ul{
+  display: none;
+}
+#product ul{
+  width: 256px;
+  display: none;
+  transform: translateX(-36%);
+}
+#help ul{
+  width: 150px;
+  display: none;
+  transform: translateX(-39%);
+}
+#lang ul{
+  display: none;
+  transform: translateX(-37%);
+}
+
+/* RESPONSIVE <-- PC */
+
+@media screen and (min-width: 1080px) {
+  .nopc i{
+    display: none;
+  }
+  .menumobile .bg_white{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  div.right > div, div.right > button, div.left > a{
+    display: none;
+  }
+}
+
+.nopc{
+  text-align: right;
+  z-index: 10;
+}
+
+.nopc i{
+  position: absolute;
+  right: 30px;
+}
+
+.menumobile{
+  overflow-y: auto;
+}
+
+.bg_white{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: none;
+}
+
+.bg_white .flexrev{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.bg_white a{
+  font-size: 17px;
+}
+
+.bg_white .flexrev a{
+  text-transform: uppercase;
+}
+
+.bg_white .flexrev a.active{
+  opacity: 1;
+}
+
+.bg_white .flexrev a:last-child{
+  margin: 25px 0;
+}
+
+.bg_white .flex{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  position: relative;
+}
+
+.bg_white .flex i{
+  display: none;
+}
+
+.bg_white .flex i.active{
+  display: block;
+}
+
+.bg_white .flex ul{
+  list-style: none;
+}
+
+.bg_white .flex ul li{
+  margin: 15px 20px;
+}
+
+.bg_white .flex ul i{
+  display: inline-block;
+}
+
+.bg_white .flex > div{
+  position: absolute;
+  display: none;
+}
+
+.bg_white .flex > div.active{
+  display: block;
+  top: 25px;
+}
+
+.bg_white .flex > div > div i{
+  display: inline-block;
+}
+
+.bg_white .flex sup{
+  color: #eb008d;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#lang2{
+  margin-bottom: 30px;
+}
+
+.positionab{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.positionat{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bg_white button{
+  background-color: #eb008d;
+  padding: 10px 24px;
+  color: #ffffff;
+  border: none;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bg_white button:hover{
+  background-color: rgb(210, 0, 126);
+}
